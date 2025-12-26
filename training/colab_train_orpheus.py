@@ -19,7 +19,8 @@ Time: ~40-50 hours total (4-5 sessions of ~12 hours each)
 # ============================================================================
 print("Installing dependencies...")
 import subprocess
-subprocess.run(["pip", "install", "-q", "torch", "transformers", "datasets", "accelerate", "wandb", "tqdm"])
+subprocess.run(["pip", "cache", "purge"])
+subprocess.run(["pip", "install", "-q", "--no-cache-dir", "torch", "transformers", "datasets", "accelerate", "tqdm"])
 
 import os
 import json
