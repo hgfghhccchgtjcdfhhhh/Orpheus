@@ -25,7 +25,7 @@ import subprocess
 import sys
 
 # Install torch_xla for TPU support
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "torch==2.4.0", "torch_xla[tpu]==2.4.0", "-f", "https://storage.googleapis.com/libtpu-releases/index.html"])
+subprocess.run([sys.executable, "-m", "pip", "install", "-q", "torch==2.8.0", "torch_xla[tpu]==2.8.0", "-f", "https://storage.googleapis.com/libtpu-releases/index.html"])
 subprocess.run([sys.executable, "-m", "pip", "install", "-q", "transformers", "tqdm"])
 
 import os
