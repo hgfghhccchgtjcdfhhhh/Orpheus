@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ORPHEUS 760M EXTREME - 1024 LAYERS - COLAB TRAINING SCRIPT
+ORPHEUS 500M - 1024 LAYERS - COLAB TRAINING SCRIPT
 ============================================================
 THE DEEPEST TRANSFORMER EVER BUILT - BEATS DEEPNET'S 1000 LAYERS!
 
@@ -182,7 +182,7 @@ class TransformerBlock(nn.Module):
 
 
 class Orpheus(nn.Module):
-    """ORPHEUS 760M - 1024 LAYERS - THE DEEPEST TRANSFORMER EVER BUILT"""
+    """ORPHEUS 500M - 1024 LAYERS - THE DEEPEST TRANSFORMER EVER BUILT"""
     
     def __init__(self, config: OrpheusConfig):
         super().__init__()
@@ -642,7 +642,7 @@ def train_orpheus():
 # ============================================================================
 if __name__ == "__main__":
     print("\n" + "="*70)
-    print("   ORPHEUS 760M EXTREME - 1024 LAYERS - NEW WORLD RECORD")
+    print("   ORPHEUS 500M - 1024 LAYERS - NEW WORLD RECORD")
     print("   THE DEEPEST TRANSFORMER EVER BUILT - BEATS DEEPNET!")
     print("="*70 + "\n")
     
